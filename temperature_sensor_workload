@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+    for (int j = 0; j < 3; ++j) {
+        for (volatile int i = 0; i < 10000000; ++i);  // Simulated delay
+        printf("Temperature: 25 C\n");
+    }
+    return 0;
+}
